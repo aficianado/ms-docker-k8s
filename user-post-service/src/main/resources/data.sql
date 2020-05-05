@@ -1,0 +1,14 @@
+insert into employee values(10001, sysdate(), 'Johnny');
+insert into employee values(10002, sysdate(), 'Bruno');
+insert into employee values(10003, sysdate(), 'Lee');
+insert into post values(11001, 'My First Post', 10001);
+insert into post values(11002, 'My Second Post', 10001);
+insert into post values(11003, 'My Third Post', 10001);
+insert into post values(12001, 'My First Post', 10002);
+insert into post values(12002, 'My Second Post', 10002);
+insert into post values(13001, 'My First Post', 10003);
+insert into post values(13002, 'My Second Post', 10003);
+insert into post values(13003, 'My Third Post', 10003);
+insert into post values(13004, 'My Fourth Post', 10003);
+insert into post values(13005, 'My Fifth Post', 10003);
+insert into post values(13006, 'My Sixth Post', 10003);
