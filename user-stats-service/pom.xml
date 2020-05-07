@@ -53,7 +53,7 @@
 			</exclusions>
 		</dependency>
 
-		<!-- Spring Cloud
+		<!-- Spring Cloud -->
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-openfeign</artifactId>
@@ -62,7 +62,6 @@
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-sleuth</artifactId>
 		</dependency>
-		-->
 	</dependencies>
 
 	<dependencyManagement>

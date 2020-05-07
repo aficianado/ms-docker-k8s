@@ -2,9 +2,10 @@ package com.db.ms;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.openfeign.EnableFeignClients;
 
 @SpringBootApplication
-//@EnableFeignClients("com.db.ms")
+@EnableFeignClients("com.db.ms")
 //@EnableDiscoveryClient
 public class UserStatsServiceApplication {
 

@@ -1,17 +1,14 @@
 package com.db.ms.proxy;
 
+import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 
 import java.util.List;
 
-//@FeignClient(name = "user-post-service", url = "${CURRENCY_EXCHANGE_SERVICE_HOST:http://localhost}:9010")
-//@FeignClient(name = "user-post-service")
-//@FeignClient(name = "zuul-api-gateway-server") //zuul api server
-//@RibbonClient(name = "user-post-service")
+@FeignClient(name = "user-post-service", url = "${USER_POST_SERVICE_URL}")
 public interface UserPostServiceProxy {
 
-    //@GetMapping("/users")
-    @GetMapping("/user-post-service/users")
+    @GetMapping("/users")
     public List<?> retrieveAllUsers();
 
 }

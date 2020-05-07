@@ -1,0 +1,23 @@
+version: '3.7'
+services:
+  user-post-service:
+    image: dbaficianado/user-post-service:0.0.1
+    build: ./user-post-service
+    container_name: user-post-service
+    ports:
+      - "9010:9010"
+    restart: always
+
+  user-stats-service:
+    image: dbaficianado/user-stats-service:0.0.1
+    build: ./user-stats-service
+    container_name: user-stats-service
+    ports:
+      - "9020:9020"
+    restart: always
+    links:
+      - user-post-service
+    environment:
+      USER_POST_SERVICE_URL: http://user-post-service:9010
+    depends_on:
+      - user-post-service
